@@ -178,6 +178,5 @@ export async function onBundleSubmitForm(data: z.infer<typeof bundleSchema>) {
         quantity: item.quantity
       })
     });
-    console.log(bundleId[0].id);
   });
 }

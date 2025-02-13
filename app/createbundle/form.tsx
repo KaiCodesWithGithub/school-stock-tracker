@@ -48,7 +48,6 @@ const BundleForm = ({ items }: { items: ItemType[] }) => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit((e) => {
-          console.log(e);
           onBundleSubmitForm(e);
           form.reset();
         })}
