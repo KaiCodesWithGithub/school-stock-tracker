@@ -1,3 +1,4 @@
-import { db as dbPg } from '../db-pgsql'
+import { drizzle } from 'drizzle-orm/neon-serverless'
+import * as schema from './schema'
 
-export const db = dbPg
+export const db = drizzle(process.env.DATABASE_URL!, { schema });
