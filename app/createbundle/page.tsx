@@ -1,3 +1,5 @@
+export const runtime = "edge";
+
 import BundleForm from "./form";
 import Backbutton from "./backbutton";
 import { getItems } from "../actions";
